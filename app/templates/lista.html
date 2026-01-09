@@ -1,0 +1,12 @@
+<h1>Lista de recetas</h1>
+
+<div class="row">
+    {% for recipe in recipe_mostrar %}
+        <h3>Titulo: {{ recipe.title }}</h3>
+        <p>Descripcion: {{ recipe.description }}</p>
+        <p>Categoria: {{ recipe.category }}</p>
+        <p>Autor: {{ recipe.author }}</p>
+        <p>Creacion: {{ recipe.created }}</p>
+
+    {% endfor %}
+</div>
